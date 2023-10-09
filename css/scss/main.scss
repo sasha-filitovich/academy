@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Kodchasan SemiBold';
+  src: url('../assets/fonts/Kodchasan/Kodchasan-SemiBold.ttf');
+}
+
+$font-nav: 'Kodchasan SemiBold', sans-serif;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 93.75%;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+@import 'header';
+@import 'start-screen';

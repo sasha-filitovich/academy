@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Kodchasan SemiBold";
+  src: url("../assets/fonts/Kodchasan/Kodchasan-SemiBold.ttf");
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 93.75%;
+  max-width: 1340px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #F6F6F6;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  z-index: 3;
+}
+
+.header__nav-lang {
+  display: flex;
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 36px;
+}
+.nav li {
+  transition: transform 0.5s;
+}
+.nav li:hover {
+  transform: scale(1.2);
+}
+
+.nav__link {
+  font: 18px "Kodchasan SemiBold", sans-serif;
+  line-height: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+.flag {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.start-screen__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1340px;
+}
+
+/*# sourceMappingURL=main.css.map */

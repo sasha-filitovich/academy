@@ -1,0 +1,51 @@
+.header {
+  background-color: #F6F6F6;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  position: relative;
+  z-index: 3;
+}
+
+.header__nav-lang {
+  display: flex;
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 36px;
+
+  li {
+    transition: transform 0.5s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.nav__link {
+  font: 18px $font-nav;
+  line-height: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+.flag {
+  margin: auto 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
