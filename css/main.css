@@ -12,7 +12,7 @@
 }
 @font-face {
   font-family: "Inter Italic";
-  src: url("../assets/fonts/Inter/Inter-italic.ttf");
+  src: url("../assets/fonts/Inter/inter-italic.ttf");
 }
 html {
   scroll-behavior: smooth;
