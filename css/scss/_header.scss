@@ -10,9 +10,14 @@
   position: relative;
 }
 
+.logo__link {
+  width: 14%;
+}
+
 .logo {
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 
 .header__nav-lang {

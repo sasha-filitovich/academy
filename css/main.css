@@ -42,9 +42,14 @@ body {
   position: relative;
 }
 
+.logo__link {
+  width: 14%;
+}
+
 .logo {
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 
 .header__nav-lang {
@@ -99,7 +104,7 @@ a {
 
 .about {
   background-color: #F6F6F6;
-  padding: 50px 0;
+  padding: 10px 0 30px;
 }
 
 .about__wrapper {
