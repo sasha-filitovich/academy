@@ -1,6 +1,19 @@
+.start-screen {
+  // display: block;
+  // margin: 0 auto;
+  // width: 100%;
+  // max-width: 1340px;
+  background: url(../assets/img/main.jpg) rgb(0, 0, 0, 0.4);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 700px;
+}
+
 .start-screen__img {
   display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1340px;
+  width: 65%;
+  margin: 0 auto 0;
+  padding-top: 15px
 }

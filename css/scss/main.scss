@@ -3,7 +3,22 @@
   src: url('../assets/fonts/Kodchasan/Kodchasan-SemiBold.ttf');
 }
 
-$font-nav: 'Kodchasan SemiBold', sans-serif;
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('../assets/fonts/Inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../assets/fonts/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Italic';
+  src: url('../assets/fonts/Inter/Inter-italic.ttf');
+}
+
+$font-nav: 'Inter SemiBold', sans-serif;
 
 html {
   scroll-behavior: smooth;
@@ -16,10 +31,12 @@ body {
 }
 
 .wrapper {
-  width: 93.75%;
+  width: 95%;
   max-width: 1340px;
   margin: 0 auto;
 }
 
 @import 'header';
 @import 'start-screen';
+@import 'about';
+@import 'goals';
