@@ -1,0 +1,41 @@
+.contacts__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+}
+
+h1.italic {
+  text-align: center;
+}
+
+.contacts__item {
+  position: relative;
+  width: fit-content;
+  padding: 20px 0 20px 60px;
+  margin: 0;
+  font: 600 16px/24px 'Inter SemiBold';
+  color: #403F3D;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 32px;
+    left: 0px;
+    top: 15px;
+  }
+}
+
+.phone::before {
+  background-image: url(../assets/icons/icon-phone.svg);
+}
+
+.mail::before {
+  background-image: url(../assets/icons/icon-email.svg);
+}
+
+.address::before {
+  width: 22px;
+  left: 10px;
+  background-image: url(../assets/icons/icon-marker.svg);
+}
