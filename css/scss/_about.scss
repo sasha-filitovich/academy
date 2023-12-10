@@ -1,6 +1,11 @@
 .about {
+  display: none;
   background-color: #F6F6F6;
   padding: 10px 0 30px;
+}
+
+.about.active {
+  display: block;
 }
 
 .about__wrapper {
@@ -12,18 +17,24 @@
   font: 400 16px/24px 'Inter Regular';
   text-align: justify;
   color: #403F3D;
+  margin-bottom: 30px;
+  p {
+    margin-bottom: 20px;
+  }
 }
 
 h1 {
-  font: 600 24px/30px 'Inter Semibold';
+  margin: 20px 0;
+  font: 600 28px/32px 'Inter Italic';
 }
 
 .italic {
-  font: 600 24px/30px 'Inter Italic';
+  font: 600 28px/32px 'Inter Italic';
   color:  #E2261E;
 }
 
-h2 {
+h3 {
+  margin-bottom: 20px;
   font: 600 24px/30px 'Inter Semibold';
   color: #403F3D;
 }

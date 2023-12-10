@@ -1,12 +1,19 @@
+.contacts {
+  display: none;
+  padding: 20px 0;
+  background-color: #F6F6F6;
+}
+
+.contacts.active {
+  display: block;
+}
+
 .contacts__wrapper {
   display: flex;
   justify-content: center;
   gap: 50px;
   align-items: center;
-}
-
-h1.italic {
-  text-align: center;
+  margin: 30px 0;
 }
 
 .contacts__item {
