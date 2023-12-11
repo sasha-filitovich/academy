@@ -1,3 +1,4 @@
+// click on links in header
 const navLink = document.querySelectorAll('.nav__link');
 navLink.forEach((el) =>
   el.addEventListener('click', () => {
@@ -5,3 +6,30 @@ navLink.forEach((el) =>
     document.querySelector(`.${el.getAttribute('href').slice(1)}`).classList.add('active');
   })
 );
+// burger
+const burger = document.querySelector('.burger');
+const headerNav = document.querySelector('.header__nav');
+const overlay = document.querySelector('.overlay');
+const navLinks = document.querySelectorAll('.nav__link');
+// click on burger icon
+burger.addEventListener('click', () => {
+  burger.classList.toggle('show');
+  headerNav.classList.toggle('show');
+  overlay.classList.toggle('show');
+  document.documentElement.classList.toggle('lock');
+  document.body.classList.toggle('lock');
+});
+// burger close function
+const burgerClose = () => {
+  headerNav.classList.remove('show');
+  burger.classList.remove('show');
+  overlay.classList.remove('show');
+  document.documentElement.classList.remove('lock');
+  document.body.classList.remove('lock');
+};
+// click on links in menu
+for (let navLink of navLinks) {
+  navLink.addEventListener('click', burgerClose);
+}
+// click on a space outside the menu
+overlay.addEventListener('click', burgerClose);

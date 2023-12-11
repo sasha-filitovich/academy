@@ -1,0 +1,30 @@
+.current {
+  display: none;
+  padding: 40px 0;
+  background-color: #E03737;
+  h2 {
+    width: 688px;
+    margin: 70px 0 70px auto;
+    color: #FFFFFF;
+    font: 600 68px/74px 'Inter Italic';
+    text-align: start;
+  }
+  p {
+    width: 411px;
+    color: #FFFFFF;
+    font: 600 40px/46px 'Inter Regular';
+  }
+}
+
+.current.active {
+  display: block;
+}
+
+.current__p {
+  margin: 50px 0;
+}
+
+.current__entrance {
+  margin: 0 0 30px auto;
+  text-align: end;
+}

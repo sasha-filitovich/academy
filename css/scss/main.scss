@@ -34,11 +34,19 @@ html {
   overflow-x: hidden;
 }
 
+html.lock {
+  overflow: hidden;
+}
+
 body {
   max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
   background-color: #F6F6F6;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -49,5 +57,6 @@ body {
 @import 'header';
 @import 'start-screen';
 @import 'about';
+@import 'current';
 @import 'contacts';
 @import 'committee';
