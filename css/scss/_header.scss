@@ -15,7 +15,7 @@
   @media (max-width: 1080px) {
     width: 19%;
   }
-  @media (max-width: 905px) {
+  @media (max-width: 880px) {
     width: 150px;
   }
 }
@@ -41,7 +41,7 @@
       transform: scale(1.2);
     }
   }
-  @media (max-width: 905px) {
+  @media (max-width: 861px) {
     flex-direction: column;
     align-items: center;
     gap: 59px;
@@ -66,7 +66,7 @@ a {
 }
 
 .header__nav {
-  @media (max-width: 905px) {
+  @media (max-width: 861px) {
     position: absolute;
     top: 0;
     right: -105%;
@@ -93,7 +93,7 @@ a {
   border: 1px solid #403F3D;
   border-radius: 50%;
   background-color: transparent;
-  @media (max-width: 905px) {
+  @media (max-width: 861px) {
     display: block;
   }
 }

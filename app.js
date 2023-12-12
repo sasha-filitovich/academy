@@ -33,3 +33,21 @@ for (let navLink of navLinks) {
 }
 // click on a space outside the menu
 overlay.addEventListener('click', burgerClose);
+
+// modal
+const committeeBlock = document.querySelectorAll('.committee__block');
+const modal = document.querySelector('.modal');
+committeeBlock.forEach((el) =>
+  el.addEventListener('click', () => {
+    modal.classList.add('show');
+    document.documentElement.classList.toggle('lock');
+    document.body.classList.toggle('lock');
+  })
+);
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.classList.remove('show');
+    document.documentElement.classList.remove('lock');
+    document.body.classList.remove('lock');
+  }
+});
