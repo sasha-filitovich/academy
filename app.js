@@ -1,6 +1,6 @@
 // click on links in header
-const navLink = document.querySelectorAll('.nav__link');
-navLink.forEach((el) =>
+const separateBlocks = document.querySelectorAll('.separate-block');
+separateBlocks.forEach((el) =>
   el.addEventListener('click', () => {
     document.querySelectorAll('.active').forEach((item) => item.classList.remove('active'));
     document.querySelector(`.${el.getAttribute('href').slice(1)}`).classList.add('active');
