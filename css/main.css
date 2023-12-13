@@ -203,7 +203,7 @@ a {
 
 .start-screen {
   display: none;
-  background: url(../assets/img/main.jpg) rgba(0, 0, 0, 0.4);
+  background: url(../assets/img/main1.jpg) rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
@@ -272,7 +272,7 @@ h1 {
 }
 
 .italic {
-  font: 600 28px/32px "Inter Italic";
+  font-family: "Inter Italic";
   color: #E2261E;
 }
 
@@ -291,7 +291,7 @@ h3 {
 }
 
 .goals__block {
-  width: 28%;
+  width: 31%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -451,6 +451,75 @@ h2 {
   color: #403F3D;
   cursor: pointer;
   transition: all 0.5s;
+}
+
+.support {
+  display: none;
+  padding: 20px 0;
+  background-color: #F6F6F6;
+}
+.support p {
+  font: 400 18px/24px "Inter Regular";
+  color: #403F3D;
+  margin-bottom: 20px;
+}
+
+.support.active {
+  display: block;
+}
+
+.support__box {
+  display: flex;
+  justify-content: space-between;
+}
+.support__box ul {
+  font: 400 18px/24px "Inter Regular";
+  color: #403F3D;
+  margin-left: 20px;
+}
+
+.support__join, .support__donate {
+  width: 48%;
+  text-align: justify;
+}
+
+.support__link {
+  display: block;
+  height: 46px;
+  margin: 30px 0;
+  text-align: center;
+  border: 2px solid #ffd4d4;
+  background-color: #ffd4d4;
+  font: 600 24px/46px "Inter Semibold";
+  color: #403F3D;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s;
+}
+
+.support__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 400px;
+  margin: 0 auto;
+  border: 3px solid #fff;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.support__contacts a {
+  display: block;
+  font: 600 18px/38px "Inter Semibold";
+  color: #403F3D;
+  text-align: center;
+  background-color: #F6F6F6;
+  transition: background-color 0.5s, box-shadow 0.5s;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .support__contacts a:hover {
+    background-color: #ffe4e4;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .modal {

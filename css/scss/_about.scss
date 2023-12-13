@@ -28,7 +28,7 @@ h1 {
 }
 
 .italic {
-  font: 600 28px/32px 'Inter Italic';
+  font-family: 'Inter Italic';
   color:  #E2261E;
 }
 
@@ -47,7 +47,7 @@ h3 {
 }
 
 .goals__block {
-  width: 28%;
+  width: 31%;
   padding: 20px;
   display: flex;
   align-items: center;
