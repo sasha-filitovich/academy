@@ -21,7 +21,14 @@
   margin: 0 auto;
   padding: 30px 40px;
   overflow-y: auto;
-  border-radius: 30px;
+  //border-top-left-radius: 20px;
+  //border-bottom-left-radius: 20px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
   background-color: #F6F6F6;
   font: 400 16px/24px 'Inter Regular';
+  text-align: justify;
+  img {
+    float: left;
+    margin-right: 20px;
+  }
 }

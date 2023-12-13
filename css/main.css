@@ -343,11 +343,23 @@ h3 {
   align-items: center;
   margin: 30px 0;
 }
+.contacts__wrapper a {
+  display: block;
+  width: fit-content;
+}
+
+.contacts__phone {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.contacts__phone img {
+  border-radius: 4px;
+}
 
 .contacts__item {
   position: relative;
-  width: fit-content;
-  padding: 20px 0 20px 60px;
+  padding: 20px 0 20px 55px;
   margin: 0;
   font: 600 16px/24px "Inter SemiBold";
   color: #403F3D;
@@ -395,26 +407,26 @@ h2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 50px 10px;
   margin: 20px 0;
 }
 
 .committee__block {
   width: 30%;
   cursor: pointer;
+  transition: box-shadow 0.5s;
 }
 @media (hover: hover) {
   .committee__block:hover .committee__content {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
   }
   .committee__block:hover .committee__button {
-    background-color: #ffabab;
+    box-shadow: 0 0 0 #F6F6F6, inset 2px 2px 2px rgba(0, 0, 0, 0.1);
   }
 }
 
 .committee__content {
-  position: relative;
-  bottom: 80px;
+  margin-top: -80px;
   padding: 100px 0 20px;
   border-radius: 10px;
   background-color: #FFFFFF;
@@ -445,12 +457,13 @@ h2 {
   width: 160px;
   height: 24px;
   border: 1px solid #ffd4d4;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #ffd4d4;
   font: 400 16px/20px "Inter Regular";
   color: #403F3D;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: all 0.5s;
+  transition: box-shadow 0.5s;
 }
 
 .support {
@@ -545,9 +558,14 @@ h2 {
   margin: 0 auto;
   padding: 30px 40px;
   overflow-y: auto;
-  border-radius: 30px;
+  box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.3);
   background-color: #F6F6F6;
   font: 400 16px/24px "Inter Regular";
+  text-align: justify;
+}
+.modal__wrapper img {
+  float: left;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
