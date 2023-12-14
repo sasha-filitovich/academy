@@ -20,7 +20,16 @@
     height: 400px;
   }
   @media (max-width: 660px) {
-    padding: 40px 0;
+    height: 350px;
+    padding: 25px 0;
+  }
+  @media (max-width: 660px) {
+    height: 280px;
+    padding: 10px 0;
+  }
+  @media (max-width: 430px) {
+    height: 210px;
+    padding: 0 0;
   }
 }
 
@@ -33,4 +42,7 @@
   width: 65%;
   margin: 0 auto 0;
   //padding-top: 15px
+  @media (max-width: 530px) {
+    width: 70%;
+  }
 }

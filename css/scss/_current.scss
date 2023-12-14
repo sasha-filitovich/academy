@@ -8,11 +8,28 @@
     color: #FFFFFF;
     font: 600 68px/74px 'Inter Italic';
     text-align: start;
+    @media (max-width: 1090px) {
+      width: 560px;
+      text-align: end;
+    }
+    @media (max-width: 590px) {
+      width: 95%;
+      margin: 30px 0 70px auto;
+      font: 600 50px/60px 'Inter Italic';
+    }
   }
   p {
     width: 411px;
     color: #FFFFFF;
     font: 600 40px/46px 'Inter Regular';
+    @media (max-width: 590px) {
+      width: 390px;
+      font: 600 34px/46px 'Inter Italic';
+    }
+    @media (max-width: 410px) {
+      width: 100%;
+      font: 600 30px/40px 'Inter Italic';
+    }
   }
 }
 
