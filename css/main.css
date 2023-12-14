@@ -90,26 +90,6 @@ body.lock {
   list-style: none;
   gap: 36px;
 }
-.nav li {
-  width: fit-content;
-}
-.nav li::after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  opacity: 0;
-  transform: scale(0);
-  background-color: #403F3D;
-  transition: transform 0.5s, opacity 0.5s;
-}
-@media (hover: hover) {
-  .nav li:hover::after {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
 @media (max-width: 861px) {
   .nav {
     flex-direction: column;
@@ -124,6 +104,22 @@ body.lock {
   line-height: 24px;
   color: #403F3D;
   cursor: pointer;
+}
+.nav__link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  background-color: #403F3D;
+  transition: transform 0.5s, opacity 0.5s;
+}
+@media (hover: hover) {
+  .nav__link:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .flag {
