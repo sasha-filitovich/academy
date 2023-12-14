@@ -10,15 +10,34 @@
 
 .about__wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  // @media (max-width: 850px) {
+  //   display: block;
+  // }
+  img {
+    @media (max-width: 1000px) {
+      width: 40%;
+    }
+    // @media (max-width: 850px) {
+    //   //float: left;
+    // }
+  }
 }
 
 .about__content {
-  width: 50%;
+  width: 45%;
   font: 400 18px/24px 'Inter Regular';
   color: #403F3D;
-  margin-bottom: 30px;
   p {
     margin-bottom: 20px;
+  }
+  @media (max-width: 1292px) {
+    width: 50%;
+  }
+  @media (max-width: 1000px) {
+    width: 59%;
   }
 }
 
