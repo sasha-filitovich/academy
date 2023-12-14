@@ -12,6 +12,12 @@
   a {
     display: block;
     width: fit-content;
+    @media (hover: hover) {
+      &:hover .contacts__item::after {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
   }
   @media (max-width: 946px) {
     gap: 0;
@@ -51,6 +57,17 @@ iframe {
     height: 32px;
     left: 0px;
     top: 15px;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: calc(100% - 55px);
+    opacity: 0;
+    transform: scale(0);
+    background-color: #403F3D;
+    transition: transform 0.5s, opacity 0.5s;
   }
 }
 

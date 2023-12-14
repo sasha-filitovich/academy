@@ -91,10 +91,24 @@ body.lock {
   gap: 36px;
 }
 .nav li {
-  transition: transform 0.5s;
+  width: fit-content;
 }
-.nav li:hover {
-  transform: scale(1.2);
+.nav li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  opacity: 0;
+  transform: scale(0);
+  background-color: #403F3D;
+  transition: transform 0.5s, opacity 0.5s;
+}
+@media (hover: hover) {
+  .nav li:hover::after {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 @media (max-width: 861px) {
   .nav {
@@ -281,9 +295,17 @@ a {
   align-items: center;
   margin-bottom: 30px;
 }
+.about__wrapper img {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
 @media (max-width: 1000px) {
   .about__wrapper img {
     width: 40%;
+  }
+}
+@media (max-width: 830px) {
+  .about__wrapper img {
+    display: none;
   }
 }
 
@@ -303,6 +325,16 @@ a {
 @media (max-width: 1000px) {
   .about__content {
     width: 59%;
+  }
+}
+@media (max-width: 850px) {
+  .about__content {
+    width: 90%;
+  }
+}
+@media (max-width: 730px) {
+  .about__content {
+    width: 100%;
   }
 }
 
@@ -325,19 +357,32 @@ h3 {
 .goals__box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px 10px;
   font: 400 16px/24px "Inter Regular";
   text-align: justify;
   color: #403F3D;
 }
+@media (max-width: 754px) {
+  .goals__box {
+    justify-content: space-around;
+  }
+}
 
 .goals__block {
-  width: 31%;
+  width: 32%;
+  min-width: 232px;
   padding: 20px;
   display: flex;
   align-items: center;
   background-color: #FFFFFF;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 499px) {
+  .goals__block {
+    width: 80%;
+  }
 }
 
 .current {
@@ -412,6 +457,12 @@ h3 {
   display: block;
   width: fit-content;
 }
+@media (hover: hover) {
+  .contacts__wrapper a:hover .contacts__item::after {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 @media (max-width: 946px) {
   .contacts__wrapper {
     gap: 0;
@@ -454,6 +505,17 @@ h3 {
   height: 32px;
   left: 0px;
   top: 15px;
+}
+.contacts__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: calc(100% - 55px);
+  opacity: 0;
+  transform: scale(0);
+  background-color: #403F3D;
+  transition: transform 0.5s, opacity 0.5s;
 }
 
 .phone::before {
