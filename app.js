@@ -1,3 +1,4 @@
+import cv from './cv.js';
 // click on links in header
 const separateBlocks = document.querySelectorAll('.separate-block');
 separateBlocks.forEach((el) =>
@@ -37,13 +38,20 @@ overlay.addEventListener('click', burgerClose);
 // modal
 const committeeBlock = document.querySelectorAll('.committee__block');
 const modal = document.querySelector('.modal');
-committeeBlock.forEach((el) =>
+const modalWrapper = document.querySelector('.modal__wrapper');
+// open the modal
+committeeBlock.forEach((el, index) =>
   el.addEventListener('click', () => {
+    modalWrapper.innerHTML = `
+      <img src=${cv[index].img} width="200" alt=${cv[index].name}>
+      <h3>${cv[index].name}</h3>
+      <p>${cv[index].text}</p>`;
     modal.classList.add('show');
     document.documentElement.classList.toggle('lock');
     document.body.classList.toggle('lock');
   })
 );
+// close the modal
 modal.addEventListener('click', (e) => {
   if (e.target === modal) {
     modal.classList.remove('show');
