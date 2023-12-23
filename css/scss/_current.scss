@@ -45,3 +45,13 @@
   margin: 0 0 30px auto;
   text-align: end;
 }
+
+.video {
+  display: none;
+  padding: 20px 0;
+  background-color: #000;
+}
+
+.video.active {
+  display: block;
+}
