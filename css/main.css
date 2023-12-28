@@ -378,6 +378,7 @@ h3 {
 @media (max-width: 499px) {
   .goals__block {
     width: 80%;
+    text-align: left;
   }
 }
 
@@ -395,15 +396,26 @@ h3 {
 }
 @media (max-width: 1090px) {
   .current h2 {
-    width: 560px;
-    text-align: end;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 830px) {
+  .current h2 {
+    width: 500px;
+    font: 600 50px/60px "Inter Italic";
   }
 }
 @media (max-width: 590px) {
   .current h2 {
-    width: 95%;
+    width: 100%;
     margin: 30px 0 70px auto;
     font: 600 50px/60px "Inter Italic";
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .current h2 {
+    font: 600 44px/52px "Inter Italic";
   }
 }
 .current p {
@@ -439,8 +451,16 @@ h3 {
 
 .video {
   display: none;
-  padding: 5px 0;
-  background-color: #000;
+  padding: 20px 0;
+  background-color: #F6F6F6;
+}
+.video h3 {
+  color: #E2261E;
+  margin: 10px 0;
+}
+.video p {
+  margin: 20px 0;
+  font: 400 18px/24px "Inter Regular";
 }
 
 .video.active {
@@ -536,6 +556,18 @@ h3 {
   width: 22px;
   left: 10px;
   background-image: url(../assets/icons/icon-marker.svg);
+}
+
+.projects {
+  display: none;
+}
+.projects p {
+  margin: 10px 0;
+  font: 400 18px/24px "Inter Regular";
+}
+
+.projects.active {
+  display: block;
 }
 
 .committee {

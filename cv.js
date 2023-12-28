@@ -5,7 +5,7 @@ const cv = [
     text: '',
   },
   {
-    img: 'assets/img/anna.jpg',
+    img: '',
     name: 'PIERRE CROTTI',
     text: '',
   },
