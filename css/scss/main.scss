@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Kodchasan SemiBold';
+  src: url('../assets/fonts/Kodchasan/Kodchasan-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter SemiBold';
+  src: url('../assets/fonts/Inter/Inter-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Regular';
+  src: url('../assets/fonts/Inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Inter Italic';
+  src: url('../assets/fonts/Inter/inter-italic.ttf');
+}
+
+$font-nav: 'Inter SemiBold', sans-serif;
+
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+html.lock {
+  overflow: hidden;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  background-color: #F6F6F6;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+@import 'header';
+@import 'start-screen';
+@import 'about';
+@import 'current';
+@import 'flyer';
+@import 'contacts';
+@import 'projects';
+@import 'committee';
+@import 'archive';
+@import 'support';
+@import 'modal';

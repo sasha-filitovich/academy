@@ -1,0 +1,45 @@
+.start-screen {
+  display: none;
+  background: url(../assets/img/main1.jpg) rgb(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  width: 100%;
+  height: 600px;
+  @media (max-width: 1070px) {
+    height: 550px;
+    padding: 10px 0;
+  }
+  @media (max-width: 950px) {
+    height: 500px;
+  }
+  @media (max-width: 830px) {
+    height: 400px;
+  }
+  @media (max-width: 660px) {
+    height: 350px;
+    padding: 25px 0;
+  }
+  @media (max-width: 660px) {
+    height: 280px;
+    padding: 10px 0;
+  }
+  @media (max-width: 430px) {
+    height: 210px;
+    padding: 0 0;
+  }
+}
+
+.start-screen.active {
+  display: block;
+}
+
+.start-screen__img {
+  display: block;
+  width: 65%;
+  margin: 0 auto 0;
+  //padding-top: 15px
+  @media (max-width: 530px) {
+    width: 70%;
+  }
+}

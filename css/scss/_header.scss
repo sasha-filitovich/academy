@@ -1,0 +1,158 @@
+.header {
+  background-color: #F6F6F6;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+}
+
+.logo__link {
+  width: 14%;
+  @media (max-width: 1080px) {
+    width: 19%;
+  }
+  @media (max-width: 880px) {
+    width: 150px;
+  }
+}
+
+.logo {
+  position: relative;
+  width: 100%;
+}
+
+.header__nav-lang {
+  display: flex;
+  gap: 30px;
+}
+
+.nav {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  gap: 36px;
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 59px;
+    margin: 40px 0;
+  }
+}
+
+.nav__link {
+  font: 18px $font-nav;
+  line-height: 24px;
+  color: #403F3D;
+  cursor: pointer;
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transform: scale(0);
+    background-color: #403F3D;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  @media (hover: hover) {
+    &:hover::after {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+.flag {
+  display: none;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__nav {
+  @media (max-width: 900px) {
+    position: absolute;
+    top: 0;
+    right: -105%;
+    width: 400px;
+    height: 100vh;
+    z-index: 3;
+    padding-top: 60px;
+    background-color: #F6F6F6;
+    transition: right 0.6s;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+}
+
+.header__nav.show {
+  right: -5%;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  order: 2;
+  z-index: 3;
+  border: 1px solid #403F3D;
+  border-radius: 50%;
+  background-color: transparent;
+  @media (max-width: 900px) {
+    display: block;
+  }
+}
+
+.burger::before, .burger::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #403F3D;
+  border-radius: 1px;
+  left: 6px;
+  transition: all 0.6s;
+}
+
+.burger::before {
+  bottom: 3px;
+}
+
+.burger::after {
+  top: 3px;
+}
+
+.burger.show::before {
+  bottom: -1px;
+  transform: rotate(45deg);
+}
+
+.burger.show::after {
+  top: -1px;
+  transform: rotate(-45deg);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0);
+  z-index: -1;
+  transition: background-color 0.5s;
+}
+
+.overlay.show {
+  background: rgba(41, 41, 41, 0.6);
+  z-index: 2;
+  transition: background-color 0.5s;
+}

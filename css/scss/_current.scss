@@ -1,0 +1,111 @@
+.current {
+  display: none;
+  background-color: #E03737;
+  padding: 30px 0;
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    @media (max-width: 660px) {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+  h2 {
+    margin: 20px 0 70px auto;
+    color: #ffffff;
+    font: 600 68px/74px 'Inter Italic';
+    text-align: start;
+    @media (max-width: 1090px) {
+      font: 600 50px/60px 'Inter Italic';
+    }
+    @media (max-width: 830px) {
+      margin: 20px 0 0 auto;
+      font: 600 40px/46px 'Inter Italic';
+    }
+    @media (max-width: 660px) {
+      margin: 0px 0 20px 0;
+      font: 600 46px/54px 'Inter Italic';
+      text-align: center;
+    }
+    @media (max-width: 590px) {
+      width: 100%;
+      text-align: center;
+    }
+    @media (max-width: 500px) {
+      font: 600 40px/46px 'Inter Italic';
+    }
+  }
+  p {
+    color: #ffffff;
+    font: 600 40px/46px 'Inter Regular';
+    @media (max-width: 960px) {
+      font: 600 34px/46px 'Inter Italic';
+    }
+    @media (max-width: 736px) {
+      font: 600 30px/36px 'Inter Italic';
+    }
+    @media (max-width: 660px) {
+      max-width: 400px;
+    }
+    @media (max-width: 410px) {
+      width: 100%;
+      font: 600 30px/40px 'Inter Italic';
+    }
+  }
+  img {
+    @media (max-width: 1209px) {
+      width: 45%;
+    }
+    @media (max-width: 960px) {
+      width: 50%;
+    }
+    @media (max-width: 660px) {
+      width: 100%;
+    }
+  }
+}
+
+.current.active {
+  display: block;
+}
+
+.poster {
+  width: 40%;
+  @media (max-width: 1209px) {
+    width: 45%;
+  }
+  @media (max-width: 660px) {
+    width: 100%;
+  }
+}
+
+.current__p {
+  margin: 50px 0;
+  @media (max-width: 960px) {
+    margin: 20px 0;
+  }
+}
+
+.current__entrance {
+  margin: 0 0 30px 0;
+}
+
+.video {
+  display: none;
+  padding: 20px 0;
+  background-color: #F6F6F6;
+  h3 {
+    color: #E2261E;
+    margin: 10px 0;
+  }
+  p {
+    margin: 20px 0;
+    font: 400 18px/24px 'Inter Regular';
+  }
+}
+
+.video.active {
+  display: block;
+}

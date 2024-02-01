@@ -1,0 +1,44 @@
+.projects {
+  display: none;
+  padding: 20px 0;
+  li {
+    margin: 30px 0;
+    font: 600 20px/24px 'Inter Semibold';
+    color: #403F3D;
+  }
+  p {
+    margin: 10px 0;
+    font: 400 18px/24px 'Inter Regular';
+  }
+  .flyer {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+.projects.active {
+  display: block;
+}
+
+.opening {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+  img {
+    @media (max-width: 1220px) {
+      width: 50%;
+    }
+    @media (max-width: 505px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 505px) {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+ol {
+  margin-left: 25px;
+}
