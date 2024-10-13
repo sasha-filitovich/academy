@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Kodchasan SemiBold';
-  src: url('../assets/fonts/Kodchasan/Kodchasan-SemiBold.ttf');
+  font-family: 'Lucida Italic';
+  src: url('../assets/fonts/Lucida/lucida-italic.ttf');
 }
 
 @font-face {
@@ -58,6 +58,7 @@ body.lock {
 @import 'start-screen';
 @import 'about';
 @import 'current';
+@import 'masterclass';
 @import 'flyer';
 @import 'contacts';
 @import 'projects';

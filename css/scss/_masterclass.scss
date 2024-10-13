@@ -1,0 +1,44 @@
+.masterclass {
+  display: none;
+  margin: 30px 0;
+  h2 {
+    margin-bottom: 50px;
+    font: 600 36px/42px 'Lucida Italic';
+    @media (max-width: 620px) {
+      margin-bottom: 20px;
+      font: 600 30px/36px 'Lucida Italic';
+    }
+  }
+}
+
+.masterclass.active {
+  display: block;
+}
+
+.masterclass__content {
+  text-align: center;
+  font: 400 20px/30px 'Inter Regular';
+  color:#403F3D;
+}
+
+.masterclass__p {
+  margin-bottom: 50px;
+    text-align: center;
+    font: 400 26px/40px 'Inter Regular';
+    color: #403F3D;
+    @media (max-width: 620px) {
+      margin-bottom: 20px;
+      font: 400 20px/30px 'Inter Regular';
+    }
+}
+
+.masterclass__teachers {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  @media (max-width: 567px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}

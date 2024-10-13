@@ -1,5 +1,53 @@
 const cv = [
   {
+    img: 'assets/img/christine.jpg',
+    name: 'CHRISTINE SÖRENSEN',
+    text: `Née à Neuchâtel (Suisse), Christine Sörensen étudie le violon à la Musik Akademie 
+    de Bâle avec Alexandre Zöldy (Quatuor Vegh) puis avec Ayla Erduran au 
+    Conservatoire de Lausanne où elle obtient un 1er Prix de Virtuosité. Elle se 
+    perfectionne ensuite à Paris auprès de Luben Yordanoff (1er violon solo à l’Orchestre 
+    de Paris). Elle étudie également l’alto à Bâle avec Max Lesueur et plus tard avec 
+    Fiodor Droujinine à Moscou.<br><br>
+    Chambriste de renom, Christine Sörensen se produit depuis de nombreuses années 
+    en Suisse et à l’étranger. Elle fut pendant dix ans l’altiste  de l’Ensemble Ad Musicam 
+    Neuchâtel et a donné de nombreux récitals avec la pianiste Paulette Zanlonghi. Sa 
+    collaboration avec la célèbre flûtiste Brigitte Buxtorf est très fructueuse depuis de 
+    nombreuses années: concerts, tournées (en Inde notamment) et enregistrements.
+    Christine Sörensen a également occupé successivement des postes de soliste au sein 
+    de plusieurs orchestres dont l’Orchestre Symphonique de Bienne et l’Orchestre de 
+    Chambre de Neuchâtel.<br><br>
+    Pédagogue réputée, elle a enseigné de 1984 à 2017 le violon et l’alto à la Haute 
+    Ecole de Musique de Lausanne (HEMU) dans les classes professionnelles. 
+    Parallèlement, très préoccupée par l’enseignement de la musique à la jeunesse, elle 
+    a co-organisé dès 1993 et pendant plus de 20 ans, les célèbres Schubertiades des 
+    Enfants à Lutry et Pully, fête de la musique réunissant toutes les écoles de musique 
+    vaudoises.<br><br>
+    De nombreux élèves ont obtenu leurs Diplômes d’Enseignement et de Concert dans 
+    sa classe. Plusieurs d’entre eux sont engagés dans des orchestres en Suisse et à 
+    l’étranger et enseignent dans différentes écoles et conservatoires. Elle est 
+    régulièrement invitée dans les Jurys de plusieurs conservatoires.<br><br>
+    Enregistrements: avec Brigitte Buxtorf: l’Alto et la Flûte en 2005, W.A. Mozart 4 
+    Quatuors pour flûte et cordes en 2007. En octobre 2009, sur le CD Océans d’Eric 
+    Gaudibert, Albumblaetter pour flûte et alto et la création «le Dit d’Elle» pour alto 
+    solo. En 2010, chez En Face, «Contralto» Duos pour 2 altos avec Nadia Rigolet 
+    Neves, ancienne élève.`,
+  },
+  {
+    img: 'assets/img/frédéric.jpg',
+    name: 'FRÉDÉRIC RAPIN',
+    text: `Frédéric Rapin a étudié à Neuchâtel, Lausanne, Nice et Paris, avec notamment Claude Trifoni, Robert Kemblinsky et 
+    Jacques Lancelot. Après avoir occupé le poste de clarinette solo de l’orchestre Musikkollegium Winterthur, il est 
+    appelé comme professeur à la Haute Ecole de Musique de Lausanne. Pédagogue réputé, il y forme de nombreux 
+    clarinettistes, qui font carrière en Suisse et dans le monde entier. Ses activités de soliste et de chambriste l’ont conduit 
+    dans toute l’Europe. Frédéric Rapin a enregistré pas moins de treize concertos pour clarinette et orchestre et créé de 
+    nombreuses œuvres contemporaines, dont plusieurs lui sont dédiées. Il s’est produit en soliste avec des chefs tels que 
+    Armin Jordan, Franz WelserMöst, Jost Meier, Marcello Viotti, Jean-Marie Auberson, Mario Venzago. En musique de 
+    chambre, Frédéric Rapin a collaboré notamment avec le Quatuor à cordes de la Philharmonie de Berlin, le Quatuor 
+    Sine Nomine, les pianistes Gérard Wyss, Dana Ciocarlie et Sylviane Deferne, l’altiste Bruno Pasquier, les 
+    violoncellistes François Salque et Patrick Demenga, la cantatrice Brigitte Balleys et le corniste Bruno Schneider. Sa 
+    discographie étendue contribue à sa notoriété auprès d’un public international.`,
+  },
+  {
     img: 'assets/img/nina.png',
     name: 'NINA SOFRONSKI',
     text: `Nina T. Sofronski a terminé des études de piano et de musique de chambre au Conservatoire 
